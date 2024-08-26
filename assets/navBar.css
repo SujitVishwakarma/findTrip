@@ -104,6 +104,8 @@
 
     .logo img {
         height: 25px; 
+        margin-right: 10px;
+        
     }
 
     .nav-buttons {
