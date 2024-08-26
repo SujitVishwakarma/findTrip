@@ -151,7 +151,7 @@
 
 @media (max-width: 600px) {
     .mentor-info-cards {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
