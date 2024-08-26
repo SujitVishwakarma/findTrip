@@ -26,7 +26,7 @@
     margin-bottom: 10px;
 }
 
-.logos {
+.company-logo {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,14 +34,14 @@
     margin: 20px 0;
 }
 
-.logos img {
+.company-logo img {
     max-width: 100px;
     margin: 10px;
     color: #777;
     transition: transform 0.3s;
 }
 
-.logos img:hover {
+.company-logo img:hover {
     transform: scale(1.1);
 }
 
@@ -97,7 +97,7 @@
     color: #ffffff; 
 }
 
-.stat-box .icon img {
+.stat-box .company-icon img {
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
@@ -128,10 +128,10 @@
         width: 100%;
         margin: 10px 0;
     }
-    .stat-box .icon{
+    .stat-box .company-icon{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 120px;
+        
     }
 }
