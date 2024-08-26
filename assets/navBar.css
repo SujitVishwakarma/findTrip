@@ -13,7 +13,7 @@
     align-items: center; 
 }
 
-.logo img {
+.nav-logo img {
     height: 40px; 
 }
 
@@ -85,8 +85,19 @@
 }
 
 @media (max-width: 480px) {
-    .logo img {
-        height: 30px; 
+    .nav-logo img {
+        height: 28px; 
+    }
+
+    .nav-buttons button {
+        padding: 4px 8px; 
+        font-size: 12px; 
+    }
+}
+@media (max-width: 375px) {
+    .nav-logo img {
+        height: 28px; 
+        margin-right: 16px;
     }
 
     .nav-buttons button {
@@ -101,19 +112,15 @@
         align-items: center; 
         padding: 2px; 
     }
-    .logo{
-            margin-left: -7px;
-    }
 
-    .logo img {
+    .nav-logo img {
         height: 25px; 
-        
-        
     }
 
     .nav-buttons {
         display: flex; 
         gap: 5px; 
+        margin-left: 5px;
     }
     .signin-btn{
         margin-right: -4px
