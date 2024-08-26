@@ -101,10 +101,13 @@
         align-items: center; 
         padding: 2px; 
     }
+    .logo{
+        margin-right: 10px;
+    }
 
     .logo img {
         height: 25px; 
-        margin-right: 10px;
+        
         
     }
 
