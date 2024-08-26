@@ -1,0 +1,137 @@
+
+.companies {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.companies-container {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: -90px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.jobs-info {
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.logos img {
+    max-width: 100px;
+    margin: 10px;
+    color: #777;
+    transition: transform 0.3s;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+.companies-container p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #777;
+}
+
+/* Stats Section */
+.stats {
+    background-color: white;
+    padding: 30px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box {
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.stat-box:hover {
+    transform: translateY(-8px);
+
+}
+.stat-box p {
+    margin: 0;
+    background-color: #f1f0fe;
+    padding: 5px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+.stat-box:hover p {
+    background-color: #15042f;
+    padding: 2px; 
+    border-radius: 20px;
+    color: #ffffff; 
+}
+
+.stat-box .icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.stat-box h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #3d088b;
+}
+
+.stat-box p {
+    font-size: 1rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .logos {
+        flex-direction: column;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .stat-box .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 120px;
+    }
+}

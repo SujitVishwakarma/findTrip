@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/index.css">
+</head>
+<body>
+    <topHeader id="topHeader"></topHeader>
+    <navBar id="navBar"></navBar>
+    <Hero id="hero"></Hero>
+    <Company id="company"></Company>
+    <FeatureCard id="featureCard"></FeatureCard>
+    <Career id="career"></Career>
+    <Work id="work"></Work>
+    <Mentor id="mentor"></Mentor>
+    <Teacher id="teacher"></Teacher>
+    <Footer id="footer"></Footer>
+    <script>
+        // Function to load HTML content into a specific element
+        function loadComponent(url, elementId) {
+            fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+            })
+            .catch(error => console.error('Error loading component:', error));
+        }
+
+        // Load components
+        loadComponent('/components/topHeader.html', 'topHeader');
+        loadComponent('/components/navBar.html', 'navBar');
+        loadComponent('/components/Hero.html', 'hero');
+        loadComponent('/components/Company.html', 'company');
+        loadComponent('/components/FeatureCard.html', 'featureCard');
+        loadComponent('/components/Career.html', 'career');
+        loadComponent('/components/Work.html', 'work');
+        loadComponent('/components/Mentor.html', 'mentor');
+        loadComponent('/components/Teacher.html', 'teacher');
+        loadComponent('/components/Footer.html', 'footer');
+
+
+    </script>
+    <script src="https://kit.fontawesome.com/f97f2ed768.js" crossorigin="anonymous"></script>
+</body>
+</html>

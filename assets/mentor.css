@@ -1,0 +1,168 @@
+
+.mentor-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.left-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: #fbb034;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2e2c44;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: start;
+}
+
+.card-number {
+    font-size: 1.5rem;
+    color: #6d28d9;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-label {
+    color: #777;
+}
+
+.curriculum-note {
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.try-btn {
+    background: #6d28d9;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.try-btn:hover {
+    background: #5b21b6;
+}
+
+/* Right Section (Mentor Images) */
+.right-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.right-section img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* Bottom Banner */
+.bottom-banner {
+    display: flex;
+    padding: 6px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #5b21b6;
+    border-radius: 10px;
+}
+
+.banner-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.contact-btn{
+    background: #401881;
+    border: 1px solid white;
+    color: #f4f4f4;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.try-banner-btn {
+    background: #fff;
+    color: #6d28d9;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.contact-btn:hover,
+.try-banner-btn:hover {
+    background: #fbb034;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .mentor-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .left-section {
+        text-align: left;
+        margin-bottom: 0;
+        flex: 1;
+    }
+
+    .right-section {
+        flex: 1;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 600px) {
+    .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentor-image,
+    .small-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bottom-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
